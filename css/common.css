@@ -18,21 +18,22 @@ input, textarea {user-select:auto;-webkit-user-select:auto;}
 }
 
 :root {
-	--color-primary:var(--color-black);
-	--color-primary-variant:var(--color-gray);
-	--color-accent:var(--color-blue);
-	--color-accent-variant:var(--color-orange);
-	--color-text:var(--color-white);
-
 	/* colors */
-	--color-black:#1b1e26;
-	--color-gray:#050a13;
-	--color-blue:#03e8f9;
-	--color-orange:#fd6413;
+	--color-point-primary:#00e6b9;
+	--color-point-secondary:#cdfaf0;
+	/* --color-orange:#fd6413; */
 	--color-white:#fff;
-	
+	/* light */
+	--color-bg:#386aff;
+
+	/* dark */
+	--color-bg:#000f3b;
+
+	/* var */
+
 	/* size */
 	--size-max-width:1200px;
 }
 
-body {font-family:'NoonnuBasicGothicRegular';}
+html {font-size:62.5%;}
+body {overflow-x:hidden; overflow-y:auto; font-family:'NoonnuBasicGothicRegular'; font-size:1.6rem; background-color:var(--color-bg);}

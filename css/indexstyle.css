@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* <header class="header">
+		<ul>
+			<li><a href="#none">About</a></li>
+			<li><a href="#none">Projects</a></li>
+			<li><a href="#none">Contact</a></li>
+		</ul>
+	</header> */
+
+.header {display:flex; justify-content:flex-end; align-items:center; position:fixed; left:0; top:0; right:0; padding:0 2.4rem}
+.header ul {display:flex; align-items:center; gap:1.2rem; height:5rem;}
+.header ul li {}
+.header ul li a {font-size:2rem; color:var(--color-point-primary)}
+.header ul li a:hover {color:var(--color-point-secondary)}
+
+.section {height:100vh; padding:5rem 2rem}
+
+.intro {display:flex; flex-direction:column; justify-content:center; width:100%;}
+.intro__imgbox {position:relative; animation:infiniteSK 1s infinite;}
+.intro__prof {position:relative; z-index:50; border:1px solid var(--color-point-primary);}
+.intro__prof img {display:block; width:100%; object-fit:cover;}
+.intro__img__deco {position:absolute; left:0; top:0; transform:translate(1rem, 1rem); z-index:30; width:135px; height:135px; background-color:var(--color-point-secondary);}
+.intro__txt {margin-top:100px; padding-right:1.5rem; font-size:1.6rem; color:var(--color-white);}
+
+/* @keyframes infiniteSK {
+	0% {transform:skew(0, 0);}
+	100% {transform:skew(-5deg, -7deg);}
+}
+ */

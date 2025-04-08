@@ -3,9 +3,72 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<title>1</title>
+	<title>오지환 신입 개발자 포트폴리오</title>
+	<meta name="description" content="신입 개발자 포트폴리오">
+	<meta name="author" content="오지환">
+	<meta property="og:title" content="오지환 신입 개발자 포트폴리오">
+	<meta property="og:type" content ="website">
+	<meta property="og:url" content="배포후 생성된 URL">
+	<meta property="og:image" content="배포후 생성된 이미지 URL">
+	<link rel="shortcut icon" href="imgs/icon/favicon.ico" type="images/x-icon">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/indexstyle.css">
+	<script src="https://kit.fontawesome.com/b4f0357f99.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-	
+	<header class="header">
+		<ul>
+			<li><a href="#none">About</a></li>
+			<li><a href="#none">Projects</a></li>
+			<li><a href="#none">Contact</a></li>
+		</ul>
+	</header>
+
+	<main class="main">
+
+		<section class="intro section">
+			<div class="intro__imgbox">
+				<figure class="intro__prof">
+					<img src="imgs/img/maintemp.png" alt="임시 프로필 이미지">
+				</figure>
+				<div class="intro__img__deco"></div>
+			</div>
+			<p class="intro__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, sequi illum consequatur id, dignissimos corporis, quisquam placeat inventore odit totam tempore maxime ipsa expedita molestias minima? Nostrum autem praesentium nemo.</p>
+		</section>
+
+		<section class="about section">
+
+		</section>
+
+		<section class="projects section">
+
+		</section>
+
+	</main>
+
+	<footer class="contact section">
+
+	</footer>
 </body>
+<script>
+	$(function(){
+		function fea() {
+			let profBoxSize = $('.intro__prof').width();
+			$('.intro__prof').height(profBoxSize);
+			$('.intro__img__deco').width(profBoxSize);
+			$('.intro__img__deco').height(profBoxSize);
+		}
+
+
+		$(window).resize(function(){
+			let windowHeight = $(window).height();
+			console.log(windowHeight)
+
+			fea()
+		})
+
+		fea()
+	})
+</script>
 </html>
